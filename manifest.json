@@ -1,0 +1,20 @@
+{
+  "name": "pass-thorugh-ptt-wall-wss",
+  "version": "1.0",
+  "description": "Pass through PTT's wall !!",
+  "permissions": ["activeTab", 
+    "declarativeContent", 
+    "storage",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "webNavigation",
+    "debugger",
+    "https://*/",
+    "wss://*/"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
